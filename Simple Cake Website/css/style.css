@@ -1,0 +1,162 @@
+:root{
+    --lightb1:#F1DEC9;
+    --lightb2:#C8B6A6;
+    --lightb3:#A4907C;
+    --lightb4:#EDE9D5;
+    --lightb5:#473C33;
+    --white:#FFFFFF;
+}
+
+body,h2{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.landing{
+    background-image: url('../media/cake.jpg');
+    background-size: cover;
+    background-position:center;
+    height:100vh;
+    color:var(--white);
+}
+
+header a{
+    text-decoration: none;
+    color:var(--lightb1);
+    min-width: 120px;
+}
+
+
+header{
+    display:flex;
+    flex-wrap:wrap;
+    row-gap:1em;
+    padding:1em;
+}
+
+#logo{
+    flex:3;
+    font-size:1.25em;
+    min-width: 260;
+}
+
+nav{
+    flex:2;
+    display:flex;
+    align-items: center;
+}
+
+nav a{
+    flex:1;
+}
+
+nav a:hover{
+    color:var(--lightb3);
+}
+
+header h2 i,nav a i{
+    margin-right:.5em;
+}
+
+.maintext{
+    display:flex;
+    flex-direction:column;
+    height:50vh;
+    justify-content: center;
+    padding:2em;
+}
+
+.tagline1{
+    color:var(--lightb2);
+    font-size:2.5em;
+    font-weight: bolder;
+}
+
+.tagline2{
+    color:var(--lightb2)
+}
+
+
+.maintext div{
+    margin-top:.75em;
+}
+
+.maintext button{
+    width:20vh;
+    margin-top:2em;
+    border-radius:10px;
+    padding:.7em;
+    background-color: var(--lightb1);
+    color:var(--lightb5);
+    border:1px solid var(--lightb1);
+}
+
+.menu{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    background:linear-gradient(to right,rgb(214,161,107),rgb(146,108,104));
+    color:var(--lightb5);
+    /* background-image: url('../media/cake1.jpg.jpg'); */
+}
+
+#menuheading,#locheading{
+    background:linear-gradient(to right,rgb(214,161,107),rgb(146,108,104));
+    font-size:2.5em;
+    color:var(--lightb5);
+    display:flex;
+    justify-content:center;
+}
+
+.menu th{
+    color:var(--lightb1);
+    font-size:1.8em;
+}
+
+table{
+    width:100%;
+    padding:1em;
+}
+
+.menu tr{
+    display:flex;
+    justify-content: center;
+    margin-top:.8em;
+}
+
+
+.menu td:nth-child(1){
+    flex:1;
+    justify-self: left;
+}
+
+.menu td:nth-child(2){
+    justify-self: right;
+}
+
+.CakeVarieties{
+    grid-row:span 2;
+}
+
+.locations{
+    background:linear-gradient(to right,rgb(214,161,107),rgb(146,108,104));
+    color:var(--lightb5);
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.locations h2{
+    color:var(--lightb1);
+    margin-bottom: .8em;
+}
+
+.locations div{
+    flex:1;
+    padding:1em;
+    min-width:165px;
+}
+
+footer{
+    background-color:#473C33;
+    color:var(--lightb1);
+    padding:.25em 1em;
+}
